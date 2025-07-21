@@ -1,1 +1,1 @@
--- Game made using lua.
+-- Game made using lua and LOVE2D engine.
