@@ -4,8 +4,7 @@ function love.conf(t)
     t.console = true
     t.externalstorage = false
     t.gammacorrect = true
-    t.window.title = "Jogo 2D"
-  -- Window size and icon Game
+                                     -- Window size and icon Game
     t.window.icon = "icon/icon-game.jpg"
     t.window.x = 100
     t.window.y = 100
