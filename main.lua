@@ -1,1 +1,17 @@
--- Game made using lua and LOVE2D engine.
+--Global Variable / import module Love
+_G.love = require("love")
+
+ function love.load() -- Load the game
+
+ end
+
+  function love.update(dt) -- Update game - dt = Delta Time
+
+ end
+
+  function love.draw()
+    love.graphics.print("Hello Mundo")
+
+ end
+
+
