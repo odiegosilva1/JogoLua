@@ -17,11 +17,25 @@ _G.love = require("love")
  end
 
   function love.update(dt)  -- Update game - dt = Delta Time
-     pacman.x = pacman.x + 1
+     -- Keyboard Input 
+     if love.keyboard.isDown("a")  then 
+          pacman.x = pacman.x - 1
+     end
 
+     if love.keyboard.isDown("d") then 
+          pacman.x = pacman.x + 1
+     end
+
+     if love.keyboard.isDown("w") then
+          pacman.y = pacman.y - 1
+     end
+     if love.keyboard.isDown("s") then
+          pacman.y = pacman.y + 1
+     end
+
+-- Food 
      if pacman.x >= food.x + 20 then
           food.eaten = true
-     
      end     
  end
 
