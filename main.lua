@@ -7,9 +7,10 @@ _G.love = require("love")
      _G.pacman = {}
      pacman.x = 200
      pacman.y = 250
-     pacman.eat = false
-
+     pacman.eat = true
+-- Food 
      _G.food_X = 600
+     _G.food_eaten = false
 
  end
 
@@ -17,13 +18,13 @@ _G.love = require("love")
      pacman.x = pacman.x + 1
 
      if pacman.x >= food_X + 20 then
-          pacman.eat = true
+          _G.food_eaten = true
      end     
        
  end
 
   function love.draw()
-     if not pacman.eat then 
+     if not food_eaten then 
           love.graphics.setColor(0, 0, 0) 
           love.graphics.rectangle("fill", food_X, 200, 70, 70)
      end
